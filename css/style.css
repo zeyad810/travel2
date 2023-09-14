@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+    font-family: sans-serif;
+    
+}
+header{
+    height: 12%;
+}
+.nav-item:hover{
+background-color: #ffa500;
+border-radius: 5px;
+transition: 0.5s;
+}
+header{
+    background-color: aliceblue;
+}
+.section-padding{
+    padding: 40px 0;
+}
+.home{  
+    width: 100%;
+    height: 90vh;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)) ,url(../img/home.png) no-repeat ;
+    background-size: cover;
+    background-position: center;  
+    overflow: hidden;  
+}
+.change::after{
+    content: "";
+    color: #ffa500;
+    animation: change 10s infinite linear;
+}@keyframes change{
+    0%{content: "France";}
+    10%{content: "Spain";}
+    20%{content: "England";}
+    30%{content: "Egypt";}
+    40%{content: "Italy";}
+    50%{content: "United States";}
+    60%{content: "Turkey";}
+    70%{content: "Germany";}
+    80%{content: "China";}
+    90%{content: "India";}
+    100%{content: "Mexico";}
+}
+button{
+    box-shadow: 0 0 10px 0 #b47602 ;
+}
+
+.card{
+    box-shadow: 0 0 8px 0 gray;
+}
+.gallery img{
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.gallery img:hover{
+    transform: scale(1.1);
+}
